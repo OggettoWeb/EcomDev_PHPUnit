@@ -118,11 +118,11 @@ class EcomDev_PHPUnit_Model_Config extends Mage_Core_Model_Config
      */
     public function getModelInstance($modelClass='', $constructArguments=array())
     {
-        if (!isset($this->_replaceInstanceCreation['model'][$modelClass])) {
+        if (!isset($this->_replaceInstanceCreation['model'][(string) $modelClass])) {
             return parent::getModelInstance($modelClass, $constructArguments);
         }
 
-        return $this->_replaceInstanceCreation['model'][$modelClass];
+        return $this->_replaceInstanceCreation['model'][(string) $modelClass];
     }
 
     /**
