@@ -73,13 +73,6 @@ class EcomDev_PHPUnit_Install extends Mage_Shell_Abstract
     );
 
     /**
-     * This script doesn't need initialization of Magento
-     *
-     * @var bool
-     */
-    protected $_includeMage = false;
-
-    /**
      * Retrieve Usage Help Message
      *
      */
